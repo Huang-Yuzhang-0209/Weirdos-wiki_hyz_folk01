@@ -145,10 +145,15 @@ a {
 .topnav a {
   padding: 4px 0;
   border-bottom: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .topnav a:hover {
   border-bottom-color: var(--ink);
+}
+
+.topnav-repo span {
+  font-size: 0.9em;
 }
 
 /* Home ------------------------------------------------------------------- */

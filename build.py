@@ -19,6 +19,7 @@ ASSETS_DIR = ROOT / "assets"
 DIST_DIR = ROOT / "dist"
 
 SITE_NAME = "神人百科"
+REPO_URL = "https://github.com/Weirdos-wiki/Weirdos-wiki"
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -524,6 +525,7 @@ def layout(
       <nav class="topnav" aria-label="主导航">
         <a href="{rel}index.html">首页</a>
         <a href="{rel}index.html#index">页面索引</a>
+        <a class="topnav-repo" href="{REPO_URL}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
